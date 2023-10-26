@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "setlists",
+  "info": {
+    "singularName": "setlist",
+    "pluralName": "setlists",
+    "displayName": "Setlist"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "songs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::song.song",
+      "inversedBy": "setlists"
+    }
+  }
+}
