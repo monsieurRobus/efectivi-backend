@@ -708,6 +708,7 @@ export interface ApiReviewReview extends Schema.CollectionType {
     singularName: 'review';
     pluralName: 'reviews';
     displayName: 'Review';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -717,6 +718,7 @@ export interface ApiReviewReview extends Schema.CollectionType {
     Description: Attribute.Blocks;
     ClientName: Attribute.String;
     url: Attribute.String;
+    Fecha: Attribute.Date;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
